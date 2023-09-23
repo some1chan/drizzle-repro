@@ -1,0 +1,22 @@
+{
+	"extends": [
+		"@sapphire/ts-config",
+		"@sapphire/ts-config/decorators",
+		"@sapphire/ts-config/verbatim"
+	],
+	"compilerOptions": {
+		// Basics
+		"baseUrl": "src",
+		"rootDir": "src",
+		"outDir": "dist",
+
+		// Personal preference
+		"noFallthroughCasesInSwitch": false,
+
+		// Required for Drizzle ORM
+		"skipLibCheck": true
+	},
+	// .json section explicitly required for copying
+	"include": ["src/**/*", "src/**/*.json"],
+	"exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.spec.ts"]
+}

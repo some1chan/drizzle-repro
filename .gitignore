@@ -1,0 +1,28 @@
+# Ignore a blackhole and the folder for development
+node_modules/
+.vs/
+.idea/
+*.iml
+
+# We really don't need this cache
+.DS_Store
+
+# Build output
+dist/
+
+# Coverage output
+coverage/
+
+# Don't export the whole database
+database/
+
+# Ignore heapsnapshot and log files
+*.heapsnapshot
+*.log
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
